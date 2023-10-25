@@ -16,7 +16,7 @@
     <category field="humanities"/>
     <issn>0004-8402</issn>
     <eissn>1471-6828</eissn>
-    <updated>2023-10-20T19:33:01-04:00</updated>
+    <updated>2023-10-25T16:01:47+10:30</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -218,7 +218,7 @@
       </else>
     </choose>
   </macro>
-  <citation et-al-min="4" et-al-use-first="2" disambiguate-add-year-suffix="true" disambiguate-add-names="false" disambiguate-add-givenname="true" givenname-disambiguation-rule="by-cite" collapse="year-suffix-ranged">
+  <citation et-al-min="4" et-al-use-first="2" disambiguate-add-year-suffix="true" disambiguate-add-names="false" disambiguate-add-givenname="true" givenname-disambiguation-rule="by-cite" collapse="year-suffix-ranged" cite-group-delimiter="; ">
     <sort>
       <key macro="year-date-inline"/>
       <key macro="author"/>
