@@ -19,7 +19,7 @@
     <category citation-format="note"/>
     <category field="law"/>
     <summary>The Bluebook legal citation style for law reviews.</summary>
-    <updated>2023-10-20T19:33:01-04:00</updated>
+    <updated>2024-02-22T19:28:03+10:30</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -182,7 +182,7 @@
   <macro name="issuance">
     <choose>
       <if match="any" variable="status">
-        <group>
+        <group delimiter=" ">
           <text variable="status" text-case="capitalize-first"/>
           <date variable="issued">
             <date-part name="year"/>

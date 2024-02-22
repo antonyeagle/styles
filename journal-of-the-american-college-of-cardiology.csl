@@ -20,7 +20,7 @@
     <issn>0735-1097</issn>
     <eissn>1558-3597</eissn>
     <summary>Journal of the American College of Cardiology</summary>
-    <updated>2023-10-20T19:33:01-04:00</updated>
+    <updated>2024-02-22T19:28:03+10:30</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -108,7 +108,7 @@
     <sort>
       <key variable="citation-number"/>
     </sort>
-    <layout delimiter=", " vertical-align="sup">
+    <layout delimiter="," vertical-align="sup">
       <text variable="citation-number"/>
     </layout>
   </citation>
