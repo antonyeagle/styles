@@ -16,7 +16,7 @@
     <category field="humanities"/>
     <issn>0004-8402</issn>
     <eissn>1471-6828</eissn>
-    <updated>2023-10-25T16:01:47+10:30</updated>
+    <updated>2024-05-16T16:23:04-07:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -272,10 +272,10 @@
           <if type="book report" match="any">
             <choose>
               <if is-numeric="volume">
-                <group delimiter=" " prefix=", ">
-                  <text term="volume" form="short"/>
-                  <number variable="volume"/>
-                  <text variable="volume-title" text-case="title" prefix=": "/>
+                <group delimiter="" prefix=", ">
+                  <text term="volume" form="short" suffix=" "/>
+                  <number font-weight="bold" variable="volume"/>
+                  <text variable="volume-title" font-style="italic" text-case="title" prefix=": "/>
                 </group>
               </if>
             </choose>
