@@ -16,7 +16,7 @@
     <category field="humanities"/>
     <issn>0004-8402</issn>
     <eissn>1471-6828</eissn>
-    <updated>2025-07-31T09:23:52+02:00</updated>
+    <updated>2025-07-31T09:55:35+02:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -311,9 +311,9 @@
             <choose>
               <if variable="volume">
                 <group delimiter=": " prefix=", ">
-                  <group dleimiter=" ">
-                  <text term="volume" form="short"/>
-                  <number font-weight="bold" variable="volume"/>
+                  <group delimiter=" ">
+                    <text term="volume" form="short"/>
+                    <number font-weight="bold" variable="volume"/>
                   </group>
                   <text variable="volume-title" font-style="italic" text-case="title"/>
                 </group>
