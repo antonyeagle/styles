@@ -10,10 +10,18 @@
       <name>Devin Roza LC</name>
       <email>devin (.) roza (@) legionaries {.} org  (remove spaces and parenthesis/brackets but leave periods to get email)</email>
     </author>
+    <contributor>
+      <name>Patrick O'Brien</name>
+      <email>info@citationstyler.com</email>
+    </contributor>
+    <contributor>
+      <name>Erasmo Barresi</name>
+      <email>erasmobarresi@gmail.com</email>
+    </contributor>
     <category citation-format="note"/>
     <category field="theology"/>
     <summary>The Pontifical Biblical Institute (Pontificio Istituto Biblico) style</summary>
-    <updated>2024-05-16T16:34:57-07:00</updated>
+    <updated>2026-10-11T15:39:53+02:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale>
@@ -50,11 +58,13 @@
   <macro name="author">
     <names variable="author">
       <name font-variant="small-caps"/>
+      <et-al font-variant="normal"/>
     </names>
   </macro>
   <macro name="author-bibliography">
     <names variable="author">
       <name font-variant="small-caps" name-as-sort-order="all"/>
+      <et-al font-variant="normal"/>
     </names>
   </macro>
   <macro name="author-short">
@@ -67,6 +77,7 @@
       <if type="paper-conference">
         <names variable="translator">
           <name font-variant="small-caps"/>
+          <et-al font-variant="normal"/>
         </names>
       </if>
     </choose>
@@ -76,6 +87,7 @@
       <if type="paper-conference">
         <names variable="translator">
           <name font-variant="small-caps" name-as-sort-order="all"/>
+          <et-al font-variant="normal"/>
         </names>
       </if>
     </choose>
@@ -85,6 +97,7 @@
       <if type="paper-conference">
         <names variable="translator">
           <name form="short" font-variant="small-caps"/>
+          <et-al font-variant="normal"/>
         </names>
       </if>
     </choose>
@@ -391,16 +404,23 @@
     <choose>
       <if type="book chapter" match="any">
         <choose>
-          <if is-numeric="volume">
-            <number variable="volume" form="roman" text-case="uppercase"/>
-          </if>
-          <else>
-            <text variable="volume"/>
-          </else>
-        </choose>
-        <choose>
-          <if variable="volume locator" match="all">
-            <text value=","/>
+          <if variable="volume">
+            <choose>
+              <if is-numeric="volume">
+                <number variable="volume" form="roman" text-case="uppercase"/>
+              </if>
+              <else>
+                <text variable="volume"/>
+              </else>
+            </choose>
+            <choose>
+              <if variable="page locator" match="any">
+                <text value=","/>
+              </if>
+              <else-if variable="URL accessed" match="all">
+                <text value=","/>
+              </else-if>
+            </choose>
           </if>
         </choose>
       </if>
